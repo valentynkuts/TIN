@@ -1,0 +1,49 @@
+body {
+background-color: lightblue;
+padding-left: 11em;
+}
+
+nav {
+position: fixed;
+top:50px;
+left:30px;
+}
+
+nav a {
+display: block;
+}
+
+#wykszt+section a{
+	/*background: green;*/
+	padding-left: 30px;
+}
+
+h3+ul ol {
+    list-style-type: upper-roman;
+}
+
+p.książky .author{
+	font-style: normal;
+}
+
+p.książky .title{
+	font-style: italic;
+}
+
+hr.line {
+  border: 1px solid green;
+}
+
+@media print{
+	nav{
+		display: none;
+	}
+}
+
+#wykszt+section{
+	display: none;
+}
+
+#wykszt:hover+section{
+	display: block;
+}
